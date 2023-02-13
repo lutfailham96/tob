@@ -13,6 +13,7 @@ import (
 	"github.com/telkomdev/tob/services/mysqldb"
 	"github.com/telkomdev/tob/services/postgres"
 	"github.com/telkomdev/tob/services/redisdb"
+	"github.com/telkomdev/tob/services/tcp"
 	"github.com/telkomdev/tob/services/web"
 )
 
@@ -53,6 +54,7 @@ func initServiceKind(serviceKind ServiceKind, verbose bool) (Service, bool) {
 	services[Postgresql] = postgres.NewPostgres(verbose, Logger)
 	services[Redis] = redisdb.NewRedis(verbose, Logger)
 	services[Web] = web.NewWeb(verbose, Logger)
+	services[TCP] = tcp.NewTCP(verbose, Logger)
 
 	s, ok := services[serviceKind]
 	return s, ok

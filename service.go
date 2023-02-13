@@ -4,6 +4,9 @@ package tob
 type ServiceKind string
 
 var (
+	// TCP service kind
+	TCP ServiceKind = "tcp"
+
 	// Postgresql service kind
 	Postgresql ServiceKind = "postgresql"
 
