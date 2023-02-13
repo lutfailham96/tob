@@ -9,10 +9,27 @@ A Notification Bot written in Go
 
 [<img src="./assets/tob_arch.PNG" width="600">](https://github.com/telkomdev/tob)
 
+### Screenshot
+<h4>Discord</h5>
+
+[<img src="./assets/discord_n.PNG" width="400">](https://github.com/telkomdev/tob)
+
+<h4>Email</h5>
+
+[<img src="./assets/email_n.PNG" width="400">](https://github.com/telkomdev/tob)
+
+<h4>Slack</h5>
+
+[<img src="./assets/slack_n.PNG" width="400">](https://github.com/telkomdev/tob)
+
+<h4>Telegram</h5>
+
+[<img src="./assets/telegram_n.PNG" width="400">](https://github.com/telkomdev/tob)
+
 ## Getting Started
 
 ### Install from release (https://github.com/telkomdev/tob/releases)
-select the binary from the release according to your platform, for example for the Linux platform
+choose the binary from the release according to your platform, for example for the Linux platform
 
 #### Download binary
 
@@ -34,13 +51,18 @@ Linux
 
 ```shell
 $ sha256sum tob-1.0.0.linux-amd64.tar.gz -c sha256sums.txt
+tob-1.0.0.linux-amd64.tar.gz: OK
 ```
 
 Mac OSX
 
 ```shell
 $ shasum -a 256 tob-1.0.0.darwin-amd64.tar.gz -c sha256sums.txt
+tob-1.0.0.darwin-amd64.tar.gz: OK
 ```
+
+You should be able to see that the checksum value for the file is valid, `tob-1.0.0.linux-amd64.tar.gz: OK` and `tob-1.0.0.darwin-amd64.tar.gz: OK`. 
+Indicates the file is not damaged, not modified and safe to use.
 
 #### Extract
 
